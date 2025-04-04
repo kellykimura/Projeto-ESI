@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.5">
+  <diagram name="Página-1" id="rn4G-A0xri_nOC2t1jLq">
+    <mxGraphModel dx="1428" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-9" value="Visualizar Catálogo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingLeft=20;spacingBottom=0;spacingTop=1;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="50" y="90" width="300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-10" value="Atores: Visitante&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;div&gt;Tipo: Primário&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=20;spacingRight=20;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=1;" vertex="1" parent="Zyb6E4_nlxskoEPXZIJf-9">
+          <mxGeometry y="26" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=1;spacingLeft=20;spacingRight=20;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;" vertex="1" parent="Zyb6E4_nlxskoEPXZIJf-9">
+          <mxGeometry y="90" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-12" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Descrição: Uma pessoa interessada nos produtos oferecidos pelo Sistema visualiza a aplicação. Esse visitante pode navegar pelo catálogo, observando os produtos disponíveis.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=20;spacingRight=20;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=1;" vertex="1" parent="Zyb6E4_nlxskoEPXZIJf-9">
+          <mxGeometry y="98" width="300" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-26" value="Logar Usuário" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingLeft=20;spacingBottom=0;spacingTop=1;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="370" y="90" width="300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-27" value="Atores: Visitante&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;div&gt;Tipo: Primário&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=20;spacingRight=20;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=1;" vertex="1" parent="Zyb6E4_nlxskoEPXZIJf-26">
+          <mxGeometry y="26" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-28" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=1;spacingLeft=20;spacingRight=20;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;" vertex="1" parent="Zyb6E4_nlxskoEPXZIJf-26">
+          <mxGeometry y="90" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-29" value="Descrição: Caso o visitante queira comprar ou alugar algum dos produtos, será necessário fazer o login no Sistema.&amp;nbsp; &amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=20;spacingRight=20;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=1;" vertex="1" parent="Zyb6E4_nlxskoEPXZIJf-26">
+          <mxGeometry y="98" width="300" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-40" value="Logar Usuário" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingLeft=20;spacingBottom=0;spacingTop=1;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="370" y="350" width="300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-41" value="Atores: Visitante&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;div&gt;Tipo: Primário&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=20;spacingRight=20;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=1;" vertex="1" parent="Zyb6E4_nlxskoEPXZIJf-40">
+          <mxGeometry y="26" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-42" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=1;spacingLeft=20;spacingRight=20;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;" vertex="1" parent="Zyb6E4_nlxskoEPXZIJf-40">
+          <mxGeometry y="90" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-43" value="Descrição:&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=20;spacingRight=20;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=1;" vertex="1" parent="Zyb6E4_nlxskoEPXZIJf-40">
+          <mxGeometry y="98" width="300" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-44" value="Logar Usuário" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingLeft=20;spacingBottom=0;spacingTop=1;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="50" y="350" width="300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-45" value="Atores: Visitante&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;div&gt;Tipo: Primário&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=20;spacingRight=20;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=1;" vertex="1" parent="Zyb6E4_nlxskoEPXZIJf-44">
+          <mxGeometry y="26" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-46" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=1;spacingLeft=20;spacingRight=20;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;" vertex="1" parent="Zyb6E4_nlxskoEPXZIJf-44">
+          <mxGeometry y="90" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-47" value="Descrição:&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=20;spacingRight=20;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=1;" vertex="1" parent="Zyb6E4_nlxskoEPXZIJf-44">
+          <mxGeometry y="98" width="300" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-48" value="Cadastrar Usuário" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingLeft=20;spacingBottom=0;spacingTop=1;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="690" y="90" width="300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-49" value="Atores: Visitante&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;div&gt;Tipo: Primário&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=20;spacingRight=20;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=1;" vertex="1" parent="Zyb6E4_nlxskoEPXZIJf-48">
+          <mxGeometry y="26" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-50" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=1;spacingLeft=20;spacingRight=20;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;" vertex="1" parent="Zyb6E4_nlxskoEPXZIJf-48">
+          <mxGeometry y="90" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zyb6E4_nlxskoEPXZIJf-51" value="Descrição:&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=20;spacingRight=20;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=1;" vertex="1" parent="Zyb6E4_nlxskoEPXZIJf-48">
+          <mxGeometry y="98" width="300" height="142" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
