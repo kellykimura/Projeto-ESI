@@ -29,7 +29,7 @@
           <mxGeometry y="98" width="300" height="142" as="geometry" />
         </mxCell>
         <mxCell id="Zyb6E4_nlxskoEPXZIJf-40" value="Finalizar a compra" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingLeft=20;spacingBottom=0;spacingTop=1;spacingRight=20;" parent="1" vertex="1">
-          <mxGeometry x="690" y="350" width="300" height="240" as="geometry" />
+          <mxGeometry x="690" y="360" width="300" height="240" as="geometry" />
         </mxCell>
         <mxCell id="Zyb6E4_nlxskoEPXZIJf-41" value="Atores: Usuário&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;div&gt;Tipo: Primário&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=20;spacingRight=20;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=1;" parent="Zyb6E4_nlxskoEPXZIJf-40" vertex="1">
           <mxGeometry y="26" width="300" height="64" as="geometry" />
@@ -65,7 +65,7 @@
           <mxGeometry y="98" width="300" height="142" as="geometry" />
         </mxCell>
         <mxCell id="Vrus0vGLdMhz7AtM7l07-1" value="Efetuar pagamento" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingLeft=20;spacingBottom=0;spacingTop=1;spacingRight=20;" parent="1" vertex="1">
-          <mxGeometry x="1010" y="350" width="300" height="240" as="geometry" />
+          <mxGeometry x="1010" y="360" width="300" height="240" as="geometry" />
         </mxCell>
         <mxCell id="Vrus0vGLdMhz7AtM7l07-2" value="Atores: Usuário&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;div&gt;Tipo: Primário&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=20;spacingRight=20;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=1;" parent="Vrus0vGLdMhz7AtM7l07-1" vertex="1">
           <mxGeometry y="26" width="300" height="64" as="geometry" />
