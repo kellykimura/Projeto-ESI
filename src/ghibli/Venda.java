@@ -15,6 +15,7 @@ public class Venda {
     private String dadosCartao;
     private String dadosEntrega;
 
+    // método construtor com parâmetros
     public Venda(String nome, double valorVenda, String dadosCartao, String dadosEntrega) {
         this.nome = nome;
         this.valorVenda = valorVenda;

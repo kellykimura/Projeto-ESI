@@ -4,6 +4,8 @@
  */
 package ghibli;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author kelly
@@ -16,6 +18,10 @@ public class Filme {
     private String diretor;
     private String sinopse;
     
+    private static ArrayList<Filme> listaFilmes = new ArrayList<>();
+    
+    
+    // método construtor com parâmetros
     public Filme (String titulo, String ano, String categoria, String diretor, String sinopse){
         this.titulo = titulo;
         this.ano = ano;
@@ -24,18 +30,12 @@ public class Filme {
         this.sinopse = sinopse;
     } 
     
-    public void adicionarFilme(String titulo, String ano, String categoria, String diretor, String sinopse){
-        this.titulo = titulo;
-        this.ano = ano;
-        this.categoria = categoria;
-        this.diretor = diretor;
-        this.sinopse = sinopse;
-    }
-    
-    public void adicionarFilme() {
-        System.out.println("Filme '" + titulo + "' adicionado ao sistema.");
+    public void adicionarFilme(){
+        listaFilmes.add(this);
+        System.out.println("Filme adicionado: " + titulo);
     }
 
+    // getters e setters
     public String getTitulo() {
         return titulo;
     }

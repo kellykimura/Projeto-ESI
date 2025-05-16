@@ -4,6 +4,8 @@
  */
 package ghibli;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author kelly
@@ -16,6 +18,8 @@ public class Cliente {
     private String cpf;
     private String senha;
     
+    private static ArrayList<Cliente> listaClientes = new ArrayList<>();
+    
     // construtor com parâmetros
     public Cliente(String nome, String email, String telefone, String cpf, String senha){
         this.nome = nome;
@@ -25,10 +29,12 @@ public class Cliente {
         this.senha = senha;
     }
     
-    public void criarConta() {
+    public void criarConta(){
+        listaClientes.add(this);
         System.out.println("Conta criada para: " + nome);
     }
     
+    // getters e setters
     public String getNome(){
         return nome;
     }

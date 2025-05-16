@@ -15,7 +15,7 @@ public class Locacao {
     private String dadosCartao; //dados cartao pode ser uma classe?
     private String dadosEntrega;
     
-    // construtor 
+    // construtor com parâmetros
     public Locacao(String nome, double valorLocacao, String prazoDevolucao, String dadosCartao, String dadosEntrega){
         this.nome = nome;
         this.valorLocacao = valorLocacao;

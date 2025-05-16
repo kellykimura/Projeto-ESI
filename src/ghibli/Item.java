@@ -14,6 +14,7 @@ public class Item {
     private String dtAquisicao;
     private Filme filme;
     
+    // método construtor com parâmetros
     public Item(String numSerie,String dtAquisicao, Filme filme){
         this.numSerie = numSerie;
         this.dtAquisicao = dtAquisicao;
@@ -28,6 +29,7 @@ public class Item {
         System.out.println("Filme '"+filme.getTitulo() + "'removido do carrinho.");
     }
 
+    // getters e setters
     public String getNumSerie() {
         return numSerie;
     }
