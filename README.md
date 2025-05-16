@@ -1,4 +1,4 @@
-# Projeto-ES1
+# Ghibli No Tana
 
 O exemplar é rodado no console.
 
