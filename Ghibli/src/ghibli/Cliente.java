@@ -17,6 +17,7 @@ public class Cliente {
     private String telefone;
     private String cpf;
     private String senha;
+    private String endereco;
     
     private static ArrayList<Cliente> listaClientes = new ArrayList<>();
     
@@ -27,6 +28,7 @@ public class Cliente {
         this.telefone = telefone;
         this.cpf = cpf;
         this.senha = senha;
+        this.endereco = endereco;
     }
     
     public void criarConta(){
@@ -74,5 +76,14 @@ public class Cliente {
     public void setSenha(String senha){
         this.senha = senha;
     }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
      
+   
 }

@@ -30,7 +30,7 @@ public class Locacao {
     }
     
     public void realizarLocacao(Item item){
-        System.out.println("Filme '" + item.getFilme().getTitulo()+"'alugado por" + nome+".");
+        System.out.println("Filme '" + item.getFilme().getTitulo()+"'alugado por " + nome+".");
         System.out.println("Valor R$"+valorLocacao + "| Devolução: " + prazoDevolucao);
     }
     

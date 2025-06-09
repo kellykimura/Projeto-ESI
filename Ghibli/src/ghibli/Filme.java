@@ -17,6 +17,8 @@ public class Filme {
     private String categoria;
     private String diretor;
     private String sinopse;
+    private double valorVenda;
+    private double valorLocacao;
     
     private static ArrayList<Filme> listaFilmes = new ArrayList<>();
     
@@ -28,6 +30,8 @@ public class Filme {
         this.categoria = categoria;
         this.diretor = diretor;
         this.sinopse = sinopse;
+        this.valorLocacao = valorLocacao;
+        this.valorVenda = valorVenda;
     } 
     
     public void adicionarFilme(){
@@ -75,5 +79,23 @@ public class Filme {
     public void setSinopse(String sinopse) {
         this.sinopse = sinopse;
     }
+
+    public double getValorVenda() {
+        return valorVenda;
+    }
+
+    public void setValorVenda(double valorVenda) {
+        this.valorVenda = valorVenda;
+    }
+
+    public double getValorLocacao() {
+        return valorLocacao;
+    }
+
+    public void setValorLocacao(double valorLocacao) {
+        this.valorLocacao = valorLocacao;
+    }
+    
+    
     
 }
