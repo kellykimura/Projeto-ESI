@@ -4,9 +4,10 @@
  */
 package ghibli.interfaces;
 
-import ghibli.Cliente;
+import ghibli.modelo.Cliente;
 import java.util.ArrayList;
 import javax.swing.*;
+
 
 /**
  *

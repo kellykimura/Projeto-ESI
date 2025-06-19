@@ -4,9 +4,9 @@
  */
 package ghibli.interfaces;
 
-import ghibli.Cliente;
-import ghibli.Filme;
-import ghibli.Item;
+import ghibli.modelo.Cliente;
+import ghibli.modelo.Filme;
+import ghibli.modelo.Item;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -34,8 +34,8 @@ public class CatalogoFrame extends javax.swing.JFrame {
         setLayout(null);
 
         // exemplo
-        filmesDisponiveis.add(new Filme("A Viagem de Chihiro", "2001", "Fantasia", "Hayao Miyazaki", "Garota entra em mundo mágico."));
-        filmesDisponiveis.add(new Filme("Meu Amigo Totoro", "1988", "Animação", "Hayao Miyazaki", "Duas irmãs conhecem espírito da floresta."));
+        //filmesDisponiveis.add(new Filme("A Viagem de Chihiro", "2001", "Fantasia", "Hayao Miyazaki", "Garota entra em mundo mágico."));
+        //filmesDisponiveis.add(new Filme("Meu Amigo Totoro", "1988", "Animação", "Hayao Miyazaki", "Duas irmãs conhecem espírito da floresta."));
 
         String[] titulos = filmesDisponiveis.stream().map(Filme::getTitulo).toArray(String[]::new);
         listaFilmes = new JList<>(titulos);
@@ -56,7 +56,7 @@ public class CatalogoFrame extends javax.swing.JFrame {
             if (idx >= 0) {
                 Filme filmeSelecionado = filmesDisponiveis.get(idx);
                 Item novoItem = new Item("SER" + (carrinho.size() + 1), "08/06/2025", filmeSelecionado);
-                novoItem.adicionarCarrinho();
+                //novoItem.adicionarCarrinho();
                 carrinho.add(novoItem);
             } else {
                 JOptionPane.showMessageDialog(this, "Selecione um filme.");

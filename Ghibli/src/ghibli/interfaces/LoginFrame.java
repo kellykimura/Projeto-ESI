@@ -4,7 +4,7 @@
  */
 package ghibli.interfaces;
 
-import ghibli.Cliente;
+import ghibli.modelo.Cliente;
 import java.awt.event.*;
 import java.util.ArrayList;
 import javax.swing.*;

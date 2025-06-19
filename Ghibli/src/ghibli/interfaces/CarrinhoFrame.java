@@ -4,7 +4,11 @@
  */
 package ghibli.interfaces;
 
-import ghibli.*;
+import ghibli.modelo.Filme;
+import ghibli.modelo.Cliente;
+import ghibli.modelo.Locacao;
+import ghibli.modelo.Item;
+import ghibli.modelo.Venda;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
