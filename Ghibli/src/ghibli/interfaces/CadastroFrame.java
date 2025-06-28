@@ -7,10 +7,14 @@ package ghibli.interfaces;
 import ghibli.modelo.Cliente;
 import java.util.ArrayList;
 import javax.swing.*;
+import ghibli.controlador.ControladorCliente;
 
 
 /**
- *
+ * Janela responsável por realizar o cadastro de novos clientes no Sistema.
+ * Exige informações como nome, email,  telefone, CPF e senha.
+ * Ao confirmar o cadastro, o cliente é salvo no arquivo de clientes.
+ * Esta tela é acessada a partir da tela de login.
  * @author Gabrielly
  */
 public class CadastroFrame extends javax.swing.JFrame {
@@ -18,10 +22,15 @@ public class CadastroFrame extends javax.swing.JFrame {
     private JTextField nomeField, emailField, telefoneField, cpfField;
     private JPasswordField senhaField;
     private JButton cadastrarButton, voltarButton;
-    private ArrayList<Cliente> listaClientes;
     
-    public CadastroFrame(ArrayList<Cliente> listaClientes) {
-        this.listaClientes = listaClientes;
+    /**
+     * Lista de clientes cadastrados no Sistema.
+     */
+    
+    private ControladorCliente controlador;
+    
+    public CadastroFrame(ControladorCliente controlador) {
+        this.controlador = new ControladorCliente();
         
         setTitle("Cadastro - Ghibli Store");
         setSize(350, 300);
@@ -89,17 +98,16 @@ public class CadastroFrame extends javax.swing.JFrame {
                 return;
             }
             
-            Cliente novoCliente = new Cliente(nome, email, telefone, cpf, senha);
-            novoCliente.criarConta();
-            listaClientes.add(novoCliente);
+            // Salvar os dados na persistência com o controlador
+            controlador.cadastrarCliente(nome, email, telefone, cpf, senha, nome);
             
             JOptionPane.showMessageDialog(this, "Cadastro realizado com sucesso!");
-            new LoginFrame(listaClientes).setVisible(true);
+            new LoginFrame(controlador).setVisible(true);
             dispose();
         });
         
         voltarButton.addActionListener(e -> {
-            new LoginFrame(listaClientes).setVisible(true);
+            new LoginFrame(controlador).setVisible(true);
             dispose();
         });
     }
@@ -133,6 +141,7 @@ public class CadastroFrame extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        ControladorCliente controlador = new ControladorCliente();
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -159,8 +168,7 @@ public class CadastroFrame extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                ArrayList<Cliente> listaClientes = new ArrayList<>();
-                new CadastroFrame(listaClientes).setVisible(true);
+                new CadastroFrame(controlador).setVisible(true);
 
             }
         });

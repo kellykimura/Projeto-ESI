@@ -4,4 +4,10 @@
   "prazoDevolucao" : "22/06/2025",
   "dadosCartao" : "1234-****",
   "dadosEntrega" : null
+}, {
+  "nome" : "Antônia",
+  "valorLocacao" : 0.0,
+  "prazoDevolucao" : "22/06/2025",
+  "dadosCartao" : "1234-****",
+  "dadosEntrega" : null
 } ]

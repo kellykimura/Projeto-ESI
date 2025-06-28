@@ -13,19 +13,55 @@ import java.awt.event.*;
 import java.util.ArrayList;
 
 /**
- *
+ * Janela que mostra o catálogo de filmes disponíveis.
+ * Permite que o cliente visualize e adicione filmes ao carrinho.
+ * Também permite acessar o carrinho para finalizar comprar ou locações.
+ * 
  * @author Gabrielly
  */
 public class CatalogoFrame extends javax.swing.JFrame {
 
+    /**
+     * Lista gráfica com os títulos dos filmes disponíveis.
+     */
     private JList<String> listaFilmes;
-    private JButton adicionarCarrinhoBtn, verCarrinhoBtn;
+    
+    /**
+     * Botão para adicionar o filme selecionado ao carrinho
+     */
+    private JButton adicionarCarrinhoBtn;
+    
+    /**
+     * Botão para visualizar o carrinho atual.
+     */
+    private JButton verCarrinhoBtn;
+    
+    /**
+     * Lista de filmes disponíveis no catálogo.
+     */
     private ArrayList<Filme> filmesDisponiveis = new ArrayList<>();
+    
+    /**
+     * Lista dos itens adicionados ao carrinho pelo cliente.
+     */
     private ArrayList<Item> carrinho = new ArrayList<>();
+    
+    /**
+     * Cliente que está navegando pelo catálogo.
+     */
     private Cliente cliente;
     
+    
+    /**
+     * Construtor que cria a interface do catálofo para um cliente específico.
+     * 
+     * @param cliente Cliente que está utilizando o catálogo.
+     */
     public CatalogoFrame(Cliente cliente) {
+        
         this.cliente = cliente;
+        
+        this.filmesDisponiveis = ghibli.persistencia.PersistenciaFilme.carregar();
         
         setTitle("Catálogo de Filmes - Ghibli Store");
         setSize(400, 400);
@@ -51,6 +87,7 @@ public class CatalogoFrame extends javax.swing.JFrame {
         verCarrinhoBtn.setBounds(200, 250, 150, 30);
         add(verCarrinhoBtn);
 
+        // Evento para adicionar o filme selecionado ao carrinho
         adicionarCarrinhoBtn.addActionListener(e -> {
             int idx = listaFilmes.getSelectedIndex();
             if (idx >= 0) {
@@ -63,6 +100,7 @@ public class CatalogoFrame extends javax.swing.JFrame {
             }
         });
 
+        // Evento para visualizar o carrinho
         verCarrinhoBtn.addActionListener(e -> {
             new CarrinhoFrame(cliente, carrinho).setVisible(true);
             dispose();
@@ -95,6 +133,8 @@ public class CatalogoFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     /**
+     * Método principal para testes da interface do catálogo.
+     *
      * @param args the command line arguments
      */
     public static void main(String args[]) {

@@ -15,37 +15,64 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 /**
- *
+ * Janela para finalizar a operação de compra ou locação.
+ * Exibe os itens no carrinho, calcula o total e solicita os dados do cartão e endereço.
+ * A ação finaliza a compra conforme indicado.
+ * 
  * @author Gabrielly
  */
 public class FinalizacaoFrame extends javax.swing.JFrame {
-    private Cliente cliente;
-    private ArrayList<Item> carrinho;
-    private boolean isCompra;
+    
     /**
-     * Creates new form FinalizarFrame
+     * Cliente que está realizando a compra ou locação.
+     */
+    private Cliente cliente;
+    
+    /**
+     * Lista de itens no carrinho.
+     */
+    private ArrayList<Item> carrinho;
+    
+    /**
+     * Indica se a operação é uma compra (true) ou locação (false).
+     */
+    private boolean isCompra;
+    
+    
+    /**
+     * Construtor da janela de finalização.
+     * Configura a interface com os dados do cliente, carrinho e tipo de operação.
+     * 
+     * @param cliente Cliente que realizará a operação.
+     * @param carrinho Lista de itens que serão comprados ou alugados.
+     * @para isCompra true para compra, false para locação.
      */
     public FinalizacaoFrame(Cliente cliente, ArrayList<Item> carrinho, boolean isCompra) {
+        
         this.cliente = cliente;
         this.carrinho = carrinho;
         this.isCompra = isCompra;
 
+        // Configurações gerais da janela
         setTitle("Finalizar " + (isCompra ? "Compra" : "Locação"));
         setSize(450, 550);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setLayout(null);
 
+        // Exibe o nome do cliente
         JLabel nomeLabel = new JLabel("Cliente: " + cliente.getNome());
         nomeLabel.setBounds(20, 20, 400, 20);
         add(nomeLabel);
 
+        // Área de texto com detalhes dos itens do carrinho
         JTextArea detalhesArea = new JTextArea();
         detalhesArea.setEditable(false);
         JScrollPane scroll = new JScrollPane(detalhesArea);
         scroll.setBounds(20, 50, 390, 180);
         add(scroll);
 
+        // Calcula o valor total e preenche os detalhes
         double total = 0.0;
         StringBuilder detalhes = new StringBuilder();
 
@@ -58,10 +85,12 @@ public class FinalizacaoFrame extends javax.swing.JFrame {
                     .append("\n");
         }
 
+        // Label que mostra o valor total
         JLabel totalLabel = new JLabel("Total: R$ " + String.format("%.2f", total));
         totalLabel.setBounds(20, 240, 300, 20);
         add(totalLabel);
 
+        // Campos para dados do cartão e do endereço
         JLabel cartaoLabel = new JLabel("Dados do Cartão:");
         cartaoLabel.setBounds(20, 270, 200, 20);
         add(cartaoLabel);
@@ -78,6 +107,7 @@ public class FinalizacaoFrame extends javax.swing.JFrame {
         enderecoField.setBounds(20, 355, 390, 25);
         add(enderecoField);
 
+        // Botões "Confirmar" e "Cancelar"
         JButton confirmarBtn = new JButton("Confirmar");
         confirmarBtn.setBounds(20, 410, 170, 35);
         add(confirmarBtn);
@@ -86,8 +116,10 @@ public class FinalizacaoFrame extends javax.swing.JFrame {
         cancelarBtn.setBounds(240, 410, 170, 35);
         add(cancelarBtn);
 
+        // Preenche a área de detalhes
         detalhesArea.setText(detalhes.toString());
 
+        // Evento para confirmar operação
         confirmarBtn.addActionListener(e -> {
             String cartao = cartaoField.getText().trim();
             String endereco = enderecoField.getText().trim();
@@ -114,7 +146,8 @@ public class FinalizacaoFrame extends javax.swing.JFrame {
             carrinho.clear();
             dispose();
         });
-
+        
+        // Evento para cancelar operação
         cancelarBtn.addActionListener(e -> dispose());
     }
 
@@ -144,6 +177,9 @@ public class FinalizacaoFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     /**
+     * Método principal para teste da janela.
+     * Cria um cliente e um carrinho vazio para abrir a interface.
+     * 
      * @param args the command line arguments
      */
     public static void main(String args[]) {

@@ -10,4 +10,16 @@
     "valorVenda" : 0.0,
     "valorLocacao" : 0.0
   }
+}, {
+  "numSerie" : "001",
+  "dtAquisicao" : "15/06/2025",
+  "filme" : {
+    "titulo" : "A Viagem de Chihiro",
+    "ano" : "2001",
+    "categoria" : "Fantasia/Aventura",
+    "diretor" : "Hayao Miyazaki",
+    "sinopse" : "Sonhos dentro de sonhos.",
+    "valorVenda" : 0.0,
+    "valorLocacao" : 0.0
+  }
 } ]

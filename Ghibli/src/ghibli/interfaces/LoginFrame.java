@@ -8,24 +8,59 @@ import ghibli.modelo.Cliente;
 import java.awt.event.*;
 import java.util.ArrayList;
 import javax.swing.*;
+import ghibli.controlador.ControladorCliente;
 
 /**
- *
+ * Janela inicial para entrar no Sistema.
+ * Exige email e senha. 
+ * Caso o usuário não tenha cadastro, ele é direcionado para a tela de cadastro.
+ * 
  * @author Gabrielly
  */
 public class LoginFrame extends javax.swing.JFrame {
-
-    private JTextField emailField;
-    private JPasswordField senhaField;
-    private JButton loginButton, cadastroButton;
     
-    public LoginFrame(ArrayList<Cliente> listaClientes) {
+    /**
+     * Lista de clientes carregada da persistência.
+     */
+    private ControladorCliente controlador;
+    
+    /**
+     * Campo para entrada do email do usuário.
+     */
+    private JTextField emailField;
+    
+    /**
+     * Campo para entrada da senha do usuário.
+     */
+    private JPasswordField senhaField;
+    
+    /**
+     * Botão para realizar o login.
+     */
+    private JButton loginButton;
+    
+    /**
+     * Botão para realizar o cadastro.
+     */
+    private JButton cadastroButton;
+    
+    /**
+     * Construtor da janela de login.
+     * Configura a interface gráfica e os eventos dos botões.
+     * @param listaClientes 
+     */
+    public LoginFrame(ControladorCliente controlador) {
+        
+        this.controlador = controlador;
+        
+        // Configurações da janela
         setTitle("Login - Ghibli Store");
         setSize(300, 200);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(null);
         
+        // Label e campo para email
         JLabel emailLabel = new JLabel("Email:");
         emailLabel.setBounds(30, 30, 80, 25);
         add(emailLabel);
@@ -34,6 +69,7 @@ public class LoginFrame extends javax.swing.JFrame {
         emailField.setBounds(100, 30, 150, 25);
         add(emailField);
 
+        // Label e campo para senha
         JLabel senhaLabel = new JLabel("Senha:");
         senhaLabel.setBounds(30, 70, 80, 25);
         add(senhaLabel);
@@ -42,6 +78,7 @@ public class LoginFrame extends javax.swing.JFrame {
         senhaField.setBounds(100, 70, 150, 25);
         add(senhaField);
 
+        // Botões de ação
         loginButton = new JButton("Entrar");
         loginButton.setBounds(30, 120, 100, 25);
         add(loginButton);
@@ -50,14 +87,16 @@ public class LoginFrame extends javax.swing.JFrame {
         cadastroButton.setBounds(150, 120, 100, 25);
         add(cadastroButton);
         
+        // Eventos de clique no botão "Entrar"
         loginButton.addActionListener(e -> {
             String email = emailField.getText();
             String senha = new String(senhaField.getPassword());
 
-            for (Cliente c : listaClientes) {
+            ArrayList<Cliente> clientes = controlador.getClientes();
+            for (Cliente c : clientes) {
                 if (c.getEmail().equals(email) && c.getSenha().equals(senha)) {
                     JOptionPane.showMessageDialog(this, "Login bem-sucedido!");
-                    // abrir tela do catálogo
+                    // Abrir tela do catálogo
                     new CatalogoFrame(c).setVisible(true);
                     dispose();
                     return;
@@ -66,8 +105,9 @@ public class LoginFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Email ou senha inválidos.");
         });
 
+        // Eventro de clique no botão "Cadastrar"
         cadastroButton.addActionListener(e -> {
-            new CadastroFrame(listaClientes).setVisible(true);
+            new CadastroFrame(controlador).setVisible(true);
             dispose();
         });
     }
@@ -98,6 +138,8 @@ public class LoginFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     /**
+     * Método principal que inicia a aplicação.
+     * Cria uma lista vazia de clientes e abre a tela de login.
      * @param args the command line arguments
      */
     public static void main(String args[]) {
@@ -127,8 +169,8 @@ public class LoginFrame extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                ArrayList<Cliente> listaClientes = new ArrayList<>();
-                new LoginFrame(listaClientes).setVisible(true);
+                ControladorCliente controlador = new ControladorCliente();
+                new LoginFrame(controlador).setVisible(true);
 
             }
         });

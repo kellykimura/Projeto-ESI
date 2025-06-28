@@ -14,7 +14,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 /**
- *
+ * Janela que mostra os itens adicionados ao carrinho.
  * @author Gabrielly
  */
 public class CarrinhoFrame extends javax.swing.JFrame {

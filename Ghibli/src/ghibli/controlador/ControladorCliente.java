@@ -45,4 +45,9 @@ public class ControladorCliente {
         }
         return null;
     }
+    
+    public ArrayList<Cliente> getClientes() {
+    return clientes;
+    }
+
 }
