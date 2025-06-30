@@ -1,0 +1,185 @@
+[ {
+  "titulo" : "Nausicaä do Vale do Vento",
+  "ano" : "1984",
+  "categoria" : "Fantasia Científica",
+  "diretor" : "Hayao Miyazaki",
+  "sinopse" : "Em um futuro pós-apocalíptico, uma princesa se esforça para manter a paz entre humanos e uma floresta tóxica.",
+  "valorVenda" : 21.0,
+  "valorLocacao" : 52.5
+}, {
+  "titulo" : "O Castelo no Céu",
+  "ano" : "1986",
+  "categoria" : "Aventura/Fantasia",
+  "diretor" : "Hayao Miyazaki",
+  "sinopse" : "Um órfão e uma garota com um colar mágico buscam uma lendária cidade flutuante.",
+  "valorVenda" : 19.9,
+  "valorLocacao" : 49.9
+}, {
+  "titulo" : "Meu Amigo Totoro",
+  "ano" : "1988",
+  "categoria" : "Fantasia",
+  "diretor" : "Hayao Miyazaki",
+  "sinopse" : "Duas jovens irmãs se mudam para o campo e conhecem os espíritos da floresta, incluindo o amigável Totoro.",
+  "valorVenda" : 18.5,
+  "valorLocacao" : 48.0
+}, {
+  "titulo" : "O Túmulo dos Vagalumes",
+  "ano" : "1988",
+  "categoria" : "Drama/Guerra",
+  "diretor" : "Isao Takahata",
+  "sinopse" : "A dolorosa história de dois irmãos lutando para sobreviver durante a Segunda Guerra Mundial no Japão.",
+  "valorVenda" : 22.0,
+  "valorLocacao" : 55.0
+}, {
+  "titulo" : "O Serviço de Entregas da Kiki",
+  "ano" : "1989",
+  "categoria" : "Fantasia/Aventura",
+  "diretor" : "Hayao Miyazaki",
+  "sinopse" : "Uma jovem bruxa de 13 anos deixa sua casa para viver por conta própria, usando sua habilidade de voar para fazer entregas.",
+  "valorVenda" : 18.0,
+  "valorLocacao" : 47.5
+}, {
+  "titulo" : "Memórias de Ontem",
+  "ano" : "1991",
+  "categoria" : "Drama/Romance",
+  "diretor" : "Isao Takahata",
+  "sinopse" : "Uma jovem de Tóquio visita sua família no interior e reflete sobre sua infância e escolhas de vida.",
+  "valorVenda" : 20.5,
+  "valorLocacao" : 51.0
+}, {
+  "titulo" : "Porco Rosso: O Último Herói Romântico",
+  "ano" : "1992",
+  "categoria" : "Aventura/Fantasia",
+  "diretor" : "Hayao Miyazaki",
+  "sinopse" : "Um aviador italiano amaldiçoado com a aparência de um porco caça piratas no Mar Adriático.",
+  "valorVenda" : 20.0,
+  "valorLocacao" : 50.5
+}, {
+  "titulo" : "Pom Poko: A Grande Batalha dos Guaxinins",
+  "ano" : "1994",
+  "categoria" : "Fantasia/Comédia",
+  "diretor" : "Isao Takahata",
+  "sinopse" : "Um grupo de guaxinins com poderes de transformação tenta salvar sua floresta da urbanização.",
+  "valorVenda" : 19.5,
+  "valorLocacao" : 49.0
+}, {
+  "titulo" : "Sussurros do Coração",
+  "ano" : "1995",
+  "categoria" : "Romance/Drama",
+  "diretor" : "Yoshifumi Kondō",
+  "sinopse" : "Uma garota encontra um livro que a leva a um misterioso antiquário e a um jovem talentoso.",
+  "valorVenda" : 19.0,
+  "valorLocacao" : 48.5
+}, {
+  "titulo" : "Princesa Mononoke",
+  "ano" : "1997",
+  "categoria" : "Aventura/Fantasia",
+  "diretor" : "Hayao Miyazaki",
+  "sinopse" : "Um príncipe amaldiçoado se envolve em uma guerra entre deuses da floresta e humanos que buscam seus recursos.",
+  "valorVenda" : 21.5,
+  "valorLocacao" : 54.0
+}, {
+  "titulo" : "Meus Vizinhos Os Yamadas",
+  "ano" : "1999",
+  "categoria" : "Comédia/Slice of Life",
+  "diretor" : "Isao Takahata",
+  "sinopse" : "Uma série de curtas animados sobre o cotidiano e as peculiaridades da família Yamada.",
+  "valorVenda" : 17.5,
+  "valorLocacao" : 46.5
+}, {
+  "titulo" : "A Viagem de Chihiro",
+  "ano" : "2001",
+  "categoria" : "Fantasia",
+  "diretor" : "Hayao Miyazaki",
+  "sinopse" : "Uma garota de dez anos se vê presa em um mundo de espíritos, onde precisa trabalhar para libertar seus pais.",
+  "valorVenda" : 21.0,
+  "valorLocacao" : 53.0
+}, {
+  "titulo" : "O Reino dos Gatos",
+  "ano" : "2002",
+  "categoria" : "Fantasia/Aventura",
+  "diretor" : "Hiroyuki Morita",
+  "sinopse" : "Uma garota que pode falar com gatos é convidada para o Reino dos Gatos após salvar um príncipe.",
+  "valorVenda" : 18.0,
+  "valorLocacao" : 47.0
+}, {
+  "titulo" : "O Castelo Animado",
+  "ano" : "2004",
+  "categoria" : "Fantasia/Romance",
+  "diretor" : "Hayao Miyazaki",
+  "sinopse" : "Uma jovem é amaldiçoada e transformada em uma idosa, buscando a cura em um castelo mágico voador.",
+  "valorVenda" : 20.5,
+  "valorLocacao" : 52.0
+}, {
+  "titulo" : "Contos de Terramar",
+  "ano" : "2006",
+  "categoria" : "Fantasia/Aventura",
+  "diretor" : "Gorō Miyazaki",
+  "sinopse" : "Um príncipe rebelde e um arquimago embarcam em uma jornada para descobrir o que está afligindo seu mundo.",
+  "valorVenda" : 19.0,
+  "valorLocacao" : 49.5
+}, {
+  "titulo" : "Ponyo: Uma Amizade que Veio do Mar",
+  "ano" : "2008",
+  "categoria" : "Fantasia",
+  "diretor" : "Hayao Miyazaki",
+  "sinopse" : "Um menino faz amizade com uma princesa-peixe dourada que sonha em se tornar humana.",
+  "valorVenda" : 18.5,
+  "valorLocacao" : 48.0
+}, {
+  "titulo" : "O Mundo Secreto de Arrietty",
+  "ano" : "2010",
+  "categoria" : "Fantasia/Aventura",
+  "diretor" : "Hiromasa Yonebayashi",
+  "sinopse" : "Uma família de 'emprestadores' minúsculos vive sob o assoalho de uma casa e luta pela sobrevivência.",
+  "valorVenda" : 18.8,
+  "valorLocacao" : 47.9
+}, {
+  "titulo" : "Da Colina Kokuriko",
+  "ano" : "2011",
+  "categoria" : "Romance/Drama",
+  "diretor" : "Gorō Miyazaki",
+  "sinopse" : "Em 1963, uma jovem se envolve com o clube de jornalismo de sua escola e luta para salvar um antigo casarão.",
+  "valorVenda" : 19.2,
+  "valorLocacao" : 48.2
+}, {
+  "titulo" : "Vidas ao Vento",
+  "ano" : "2013",
+  "categoria" : "Drama/Histórico",
+  "diretor" : "Hayao Miyazaki",
+  "sinopse" : "A biografia fictícia de Jiro Horikoshi, o designer de aviões de caça japoneses da Segunda Guerra Mundial.",
+  "valorVenda" : 21.8,
+  "valorLocacao" : 53.5
+}, {
+  "titulo" : "O Conto da Princesa Kaguya",
+  "ano" : "2013",
+  "categoria" : "Fantasia/Drama",
+  "diretor" : "Isao Takahata",
+  "sinopse" : "Uma pequena criatura encontrada dentro de um bambu cresce rapidamente e se torna uma linda princesa.",
+  "valorVenda" : 22.5,
+  "valorLocacao" : 56.0
+}, {
+  "titulo" : "As Memórias de Marnie",
+  "ano" : "2014",
+  "categoria" : "Mistério/Drama",
+  "diretor" : "Hiromasa Yonebayashi",
+  "sinopse" : "Uma garota solitária encontra uma amiga misteriosa em uma mansão abandonada à be beira-mar.",
+  "valorVenda" : 20.2,
+  "valorLocacao" : 50.8
+}, {
+  "titulo" : "Aya e a Bruxa",
+  "ano" : "2020",
+  "categoria" : "Fantasia",
+  "diretor" : "Gorō Miyazaki",
+  "sinopse" : "Uma órfã que não quer ser adotada acaba vivendo com uma bruxa egoísta e seus segredos.",
+  "valorVenda" : 16.9,
+  "valorLocacao" : 45.0
+}, {
+  "titulo" : "O Menino e a Garça",
+  "ano" : "2023",
+  "categoria" : "Fantasia/Aventura",
+  "diretor" : "Hayao Miyazaki",
+  "sinopse" : "Um jovem lida com a perda de sua mãe e se aventura em um mundo misterioso com uma garça falante.",
+  "valorVenda" : 23.0,
+  "valorLocacao" : 57.0
+} ]
